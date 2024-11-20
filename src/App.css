@@ -1,0 +1,86 @@
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  background-color: rgb(6, 53, 95);
+}
+
+.h1{
+  margin-top: 100px;
+  font-size: 55px;
+  text-align: center;
+  color: aliceblue;
+}
+.stop-watch{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+}
+.flex{
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.watch{
+  margin-top: 0px;
+  font-size: 50px;
+  color: aliceblue;
+}
+
+button{
+  padding: 2px;
+  font-size: 25px;
+  min-width: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -10px;
+}
+.start-button{
+  border: 2px solid white;
+  background-color: green;
+  color: aliceblue;
+}
+.stop-button{
+  background-color: yellow;
+  border: 2px solid red;
+  color: red;
+}
+.reset-button{
+  background-color: red;
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+button:active{
+  transform: scale(0.96);
+}
+
+@media (max-width:390px) {
+  .h1{
+    font-size: 40px;
+  }
+  .watch{
+    font-size: 40px;
+  }
+  .flex{
+    padding-bottom:10px;
+  }
+  button{
+    font-size: 22px;
+    padding: 3px;
+  }
+}
+@media (max-width:360px) {
+  button{
+    font-size: 18px;
+    min-width: 80px;
+  }
+}
